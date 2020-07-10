@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>根据个数显示不同的样式</title>
+    <style>
+        .h5-warp>ul{
+            padding: 0;
+        }
+        .h5-warp>ul>li{
+            list-style: none;
+        }
+        .h5-warp>ul>li{
+            list-style: none;
+            width: 100%;
+            background-color: aqua;
+        }
+        .h5-warp>ul>li:first-child:only-child{
+            width: 50%;
+            background-color: blueviolet;
+        }
+        .h5-warp>ul>li:first-child:nth-last-of-type(3)~li{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="h5-warp">
+        <h1>H5-Demo</h1>
+        <ul>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+        
+        </ul>
+    </div>
+</body>
+<script type="text/script">
+
+</script>
+</html>
